@@ -1,0 +1,14 @@
+<launch>
+  <node pkg="ltme_node" type="ltme_node" name="ltme_node" output="screen">
+    <param name="device_model" value="LT-I2"/>
+
+    <!-- IP address of LT-I2 -->
+    <param name="device_address" value="192.168.2.102"/>
+
+    <!-- Frame ID used by the published LaserScan messages -->
+    <param name="frame_id" value="laser"/>
+    
+  </node>
+  <!-- <node pkg="tf2_ros" type="static_transform_publisher" name="laser_frame_broadcaster"
+        args="0 0 0 0 0 0 base_link laser" /> -->
+</launch>
